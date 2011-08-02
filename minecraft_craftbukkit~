@@ -1,0 +1,16 @@
+colorscheme:craftbukkit
+cs_re:red:[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
+cs_re:yellow:[0-9]{2}:[0-9]{2}:[0-9]{2} 
+cs_re:green,,bold: [A-Za-z0-9-_]+ .* logged in with.*$
+cs_re:red,,bold:\[WARNING\].*
+cs_re:yellow:<\*Console\*>.*$
+cs_re:magenta: KICKED.*
+cs_re:blue,,bold:[A-Za-z0-9_-]+ lost connection.*$
+cs_re:red,,bold:Disabling level saving\.\.
+cs_re:red,,bold:Forcing save\.\.
+cs_re:green,,bold:Save complete.
+cs_re:green,,bold:Enabling level saving\.\.
+cs_re:white,red:User groups set\!
+cs_re:white,red:[^ ]* has been given\.
+cs_re:magenta:(BAN|UNBAN): \*Console\*.*$
+cs_re:magenta:Disconnecting.*You were banned\.

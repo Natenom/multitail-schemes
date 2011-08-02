@@ -1,0 +1,57 @@
+# Murmur/Mumble (http://mumble.sourceforge.net)
+colorscheme:murmur
+
+#Version in mumble clients.
+cs_re:white: \(.*: .*\) 
+
+#IP-Adressen immer in rot
+cs_re:red:[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
+cs_re:red:[a-z0-9]{40}\:[0-9]{4,5}
+
+#Time code in every line.
+cs_re:yellow:[0-9]{2}:[0-9]{2}:[0-9]{2}
+
+#Normal connect.
+cs_re:green,,bold: New connection.*
+cs_re:green: Client version.*
+cs_re:green: <.* Authenticated.*
+
+#Disconnect.
+cs_re:blue,,bold: <.* Connection closed:  .*
+cs_re:blue,,bold: <.*Connection closed: The remote host closed the connection.*
+
+#Channel add or remove, updated ACL.
+cs_re:white,red:<[0-9]*:.*([0-9]*) Added channel.*
+cs_re:white,red:<[0-9]*:.*([0-9]*) Removed channel.*
+cs_re:white,red:<[0-9]*:.*([0-9]*) Updated ACL.*
+
+#SSL-Handshake failed. Old clients(?).
+cs_re:red: <.* Connection closed: .*Error during.*
+
+#Bad connection, packetloss and more.
+cs_re:black,yellow:<[0-9]*:.*([0-9]*) Request.* crypt-nonce resync.*
+cs_re:black,yellow:<[0-9]*:.*([0-9]*) Timeout.*
+cs_re:black,yellow:<[0-9]*:.*([0-9]*) Disconnecting ghost
+
+#Ban/banned/banlist/kick/unregister.
+cs_re:magenta:Ignoring connection: .*\(Global ban\)
+cs_re:magenta:Ignoring connection: .*\(Server ban\)
+cs_re:magenta:Certificate hash is banned.*
+cs_re:magenta:<[0-9]*:.*([0-9]*) Updated banlist.*
+cs_re:magenta:<[0-9]*:.*([0-9]*) Kickbanned .*
+cs_re:magenta:<[0-9]*:.*([0-9]*) Kicked .*
+cs_re:magenta:<[0-9]*:.*([0-9]*) Unregistered user.*
+cs_re:magenta:<[0-9]*:.*([0-9]*) Renamed user.*
+
+#Invalid username, wrong password.
+cs_re:black,yellow:<[0-9]*:.*([0-9]*) Invalid username.*
+cs_re:black,yellow:<[0-9]*:.*([0-9]*) Wrong password.*
+
+#Public Serverlist registration.
+cs_re:black,,bold: Registration: .*
+
+#Forbidden for user.
+cs_re:cyan: <.* not allowed to .*
+
+#Codec-Switching.
+cs_re:yellow:CELT codec switch.*
