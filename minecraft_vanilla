@@ -8,3 +8,4 @@ cs_re:green,,bold: .* logged in with.*$
 cs_re:white,red:([A-Za-z0-9]+)\: Giving \1 .*
 cs_re:green:\[CONSOLE\] SERVER BACKUP.*$
 cs_re:blue,,bold:[A-Za-z0-9]+ lost connection.*$
+

@@ -14,3 +14,4 @@ cs_re:white,red:User groups set\!
 cs_re:white,red:[^ ]* has been given\.
 cs_re:magenta:(BAN|UNBAN): \*Console\*.*$
 cs_re:magenta:Disconnecting.*You were banned\.
+

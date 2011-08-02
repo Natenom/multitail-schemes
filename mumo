@@ -3,3 +3,4 @@ cs_re:yellow:[0-9]{2}:[0-9]{2}:[0-9]{2}
 cs_re:black,yellow:WARNING .*$
 cs_re:green:INFO .*$
 cs_re:white,red:DEBUG .*$
+
