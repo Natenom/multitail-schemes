@@ -48,7 +48,7 @@ cs_re:black,yellow:<[0-9]*:.*([0-9]*) Invalid username.*
 cs_re:black,yellow:<[0-9]*:.*([0-9]*) Wrong password.*
 
 #Public Serverlist registration.
-cs_re:black,,bold: Registration: .*
+cs_re:black: Registration: .*
 
 #Forbidden for user.
 cs_re:cyan: <.* not allowed to .*
